@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0"
+            prefWidth="700.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="dev.aminnorouzi.qrguard.controller.SignupController">
+    <center>
+        <VBox alignment="CENTER" fillWidth="false" prefHeight="200.0" prefWidth="100.0" spacing="35.0"
+              BorderPane.alignment="CENTER">
+            <children>
+                <Label text="Enter your information to sign up">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </Label>
+                <VBox spacing="10.0">
+                    <children>
+                        <TextField fx:id="nameField" focusTraversable="false" prefHeight="30.0" prefWidth="180.0"
+                                   promptText="Full name"/>
+                        <TextField fx:id="emailField" focusTraversable="false" prefHeight="30.0" prefWidth="180.0"
+                                   promptText="Email"/>
+                        <PasswordField fx:id="passwordField" focusTraversable="false" prefHeight="30.0"
+                                       prefWidth="180.0" promptText="Password"/>
+                    </children>
+                </VBox>
+                <Button defaultButton="true" mnemonicParsing="false" onAction="#signup" prefWidth="180.0"
+                        text="Sign up"/>
+                <Button cancelButton="true" mnemonicParsing="false" onAction="#switchToLanding" prefWidth="180.0"
+                        style="-fx-background-color: none;" text="Cancel">
+                    <VBox.margin>
+                        <Insets top="-30.0"/>
+                    </VBox.margin>
+                </Button>
+            </children>
+        </VBox>
+    </center>
+</BorderPane>
