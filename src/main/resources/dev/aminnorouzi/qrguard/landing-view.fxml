@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0"
+            prefWidth="700.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="dev.aminnorouzi.qrguard.controller.LandingController">
+    <center>
+        <VBox alignment="CENTER" fillWidth="false" BorderPane.alignment="CENTER">
+            <children>
+                <Label text="QRGuard">
+                    <font>
+                        <Font name="System Bold" size="48.0"/>
+                    </font>
+                </Label>
+                <Label alignment="CENTER" prefHeight="105.0" prefWidth="611.0"
+                       text="QRGuard: Enhance authentication with QR codes. Use OpenCV for webcam integration and ZXing for decoding. Simplify registration with unique QR codes for each user. Effortlessly log in by scanning your personalized code for secure authentication."
+                       textAlignment="CENTER" wrapText="true"/>
+            </children>
+        </VBox>
+    </center>
+    <bottom>
+        <HBox alignment="CENTER" prefHeight="100.0" spacing="10.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button defaultButton="true" mnemonicParsing="false" onAction="#switchToDetection" prefWidth="70.0"
+                        text="Login"/>
+                <Button mnemonicParsing="false" onAction="#switchToSignup" prefWidth="70.0" text="Sign up"/>
+            </children>
+        </HBox>
+    </bottom>
+</BorderPane>

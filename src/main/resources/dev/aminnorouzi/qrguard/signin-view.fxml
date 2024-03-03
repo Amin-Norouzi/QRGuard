@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0"
+            prefWidth="700.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="dev.aminnorouzi.qrguard.controller.SigninController">
+    <center>
+        <VBox alignment="CENTER" fillWidth="false" prefHeight="200.0" prefWidth="100.0" spacing="35.0"
+              BorderPane.alignment="CENTER">
+            <children>
+                <Label text="Enter your password to login">
+                    <font>
+                        <Font size="18.0"/>
+                    </font>
+                </Label>
+                <PasswordField fx:id="passwordField" prefHeight="30.0" prefWidth="180.0" promptText="Password">
+                    <VBox.margin>
+                        <Insets top="-15.0"/>
+                    </VBox.margin>
+                </PasswordField>
+                <Button defaultButton="true" mnemonicParsing="false" onAction="#login" prefWidth="180.0" text="Login"/>
+                <Button cancelButton="true" mnemonicParsing="false" onAction="#switchToLanding" prefWidth="180.0"
+                        style="-fx-background-color: none;" text="Cancel">
+                    <VBox.margin>
+                        <Insets top="-30.0"/>
+                    </VBox.margin>
+                </Button>
+            </children>
+        </VBox>
+    </center>
+</BorderPane>

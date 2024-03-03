@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="450.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="dev.aminnorouzi.qrguard.controller.DetectionController">
+    <center>
+        <StackPane BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fx:id="cameraView" fitHeight="600.0" fitWidth="800.0" pickOnBounds="true"
+                           preserveRatio="true">
+                    <effect>
+                        <ColorAdjust brightness="-0.3"/>
+                    </effect>
+                </ImageView>
+                <VBox alignment="CENTER" fillWidth="false" spacing="40.0">
+                    <children>
+                        <VBox prefWidth="700.0">
+                            <children>
+                                <Label onMouseClicked="#switchToLanding" text="&lt;" textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold" size="18.0"/>
+                                    </font>
+                                </Label>
+                            </children>
+                            <padding>
+                                <Insets left="10.0"/>
+                            </padding>
+                            <VBox.margin>
+                                <Insets top="-40.0"/>
+                            </VBox.margin>
+                        </VBox>
+                        <Label alignment="CENTER" text="PLEASE SCAN YOU CARD HERE" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="28.0"/>
+                            </font>
+                        </Label>
+                        <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#0084ff00" height="250.0" stroke="WHITE"
+                                   strokeType="INSIDE" strokeWidth="5.0" width="250.0"/>
+                    </children>
+                </VBox>
+            </children>
+        </StackPane>
+    </center>
+</BorderPane>
